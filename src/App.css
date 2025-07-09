@@ -55,20 +55,16 @@ input[type="text"] {
   transition: all 0.2s ease;
   margin: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: #6a0dad;
 }
 
 .poem-output {
-  max-width: 600px;
-  width: 100%;
-  word-break: break-word;
-  margin: 2rem auto;
   display: grid;
   gap: 1.5rem;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 8px;
+  margin: 2rem 0;
   color: #6a0dad;
 }
 
@@ -117,13 +113,4 @@ footer a:hover {
 
 .fade-in {
   animation: fadeIn 0.3s ease-out;
-}
-
-input[type="text"], .generate-button {
-  max-width: 600px;
-  width: 100%;
-  box-sizing: border-box;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
