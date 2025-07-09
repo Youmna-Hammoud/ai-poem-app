@@ -32,7 +32,6 @@ button {
   border-radius: 4px;
   transition: all 0.2s ease;
   width: auto;
-  min-width: 150px;
   margin: 0.5rem;
 }
 
@@ -61,12 +60,13 @@ input[type="text"] {
 .poem-output {
   display: grid;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 0.5rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 8px;
   margin: 2rem 0;
   color: #6a0dad;
+  min-height: 100px;
 }
 
 footer {
@@ -92,11 +92,9 @@ footer a:hover {
     font-size: 2rem;
   }
   button {
-    width: 100%;
+    width: auto;
   }
-  input[type="text"] {
-    width: calc(100% - 1rem);
-  }
+  
   .container {
     gap: 1rem;
   }
@@ -104,6 +102,12 @@ footer a:hover {
   .input-section {
     padding: 0 1rem;
   }
+
+  .poem-output {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
 }
 
 

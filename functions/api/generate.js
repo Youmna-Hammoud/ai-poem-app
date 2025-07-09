@@ -34,12 +34,11 @@ export async function onRequestPost(context) {
       contents: [
         {
           parts: [
-            // The prompt is now validated to exist
             { text: `Write a short, creative poem about: ${prompt}` }
           ]
         }
       ],
-      // Add safety settings and generation config for more control
+      // safety settings and generation config for more control
       "safetySettings": [
         { "category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE" },
         { "category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_MEDIUM_AND_ABOVE" },
@@ -58,7 +57,6 @@ export async function onRequestPost(context) {
   // --- Fix 2: API Error Handling ---
   if (!geminiResponse.ok) {
     const errorData = await geminiResponse.json();
-    console.error("Gemini API Error:", errorData); // Log the full error for debugging
     return new Response(JSON.stringify({
       error: "Failed to get response from Gemini API.",
       details: errorData.error?.message || "Unknown API error."
@@ -69,9 +67,6 @@ export async function onRequestPost(context) {
   }
 
   const data = await geminiResponse.json();
-
-  console.log("Gemini API response:", JSON.stringify(data, null, 2));
-  console.log("Gemini API status:", geminiResponse.status);
 
   // --- Fix 3: Safety Block Handling ---
   if (!data.candidates || data.candidates.length === 0) {
