@@ -47,6 +47,7 @@ button:focus {
 
 input[type="text"] {
   width: auto;
+  color: #6a0dad;
   background-color: #e6e6fa;
   padding: 0.5rem 1rem;
   border: 1px solid #9370db;
