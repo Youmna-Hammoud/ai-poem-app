@@ -1,7 +1,7 @@
 # 📝 AI Poem Generator
 
 A simple web app that generates poems using AI!
-Built with modern frontend tools and connected to an AI model (like Gemini or OpenAI) through a secure backend.
+Built with modern frontend tools and connected to an AI model (Gemini).
 
 ## ✨ Features
 
@@ -12,9 +12,9 @@ Built with modern frontend tools and connected to an AI model (like Gemini or Op
 ## 🚀 Tech Stack
 
 * Frontend: HTML, CSS, JavaScript / React
-* Backend: Flask (or any lightweight Python API)
-* Deployment: Cloudflare Pages + Render (or Railway) for backend
-* AI API: Gemini / OpenAI
+* Backend: In Progress
+* Deployment: In Progress
+* AI API: Gemini
 
 ## 📆 Installation
 
@@ -32,7 +32,10 @@ Create a `.env` file in the backend directory:
 API_KEY=your_secret_api_key_here
 ```
 
-Then run your backend server and open the frontend in your browser.
+Run with Vite : 
+```bash
+npm run dev
+```
 
 ## 📄 License
 
