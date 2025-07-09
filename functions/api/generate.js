@@ -70,6 +70,9 @@ export async function onRequestPost(context) {
 
   const data = await geminiResponse.json();
 
+  console.log("Gemini API response:", JSON.stringify(data, null, 2));
+  console.log("Gemini API status:", geminiResponse.status);
+
   // --- Fix 3: Safety Block Handling ---
   if (!data.candidates || data.candidates.length === 0) {
     const finishReason = data.promptFeedback?.blockReason;
