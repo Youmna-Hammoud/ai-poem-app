@@ -1,12 +1,39 @@
-# React + Vite
+# 📝 AI Poem Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web app that generates poems using AI!
+Built with modern frontend tools and connected to an AI model (like Gemini or OpenAI) through a secure backend.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Generate unique poems from prompts
+* Clean, minimal UI
+* AI-powered creativity in seconds
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Frontend: HTML, CSS, JavaScript / React
+* Backend: Flask (or any lightweight Python API)
+* Deployment: Cloudflare Pages + Render (or Railway) for backend
+* AI API: Gemini / OpenAI
+
+## 📆 Installation
+
+```bash
+git clone https://github.com/yourusername/ai-poem-app.git
+cd ai-poem-app
+npm install
+```
+
+## ⚙️ Usage
+
+Create a `.env` file in the backend directory:
+
+```env
+API_KEY=your_secret_api_key_here
+```
+
+Then run your backend server and open the frontend in your browser.
+
+## 📄 License
+
+MIT – use it freely and build something cool!
