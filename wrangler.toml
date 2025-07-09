@@ -1,0 +1,8 @@
+name = "ai-poem-app"
+compatibility_date = "2024-01-01"
+
+# Build command to generate static files
+build_command = "npm run build"
+
+# Directory where your built static files live
+build_output_dir = "dist"
