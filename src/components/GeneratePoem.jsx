@@ -10,7 +10,7 @@ const GeneratePoem = forwardRef(function GeneratePoem({ prompt }, ref) {
     setError(null);
     setResponse("");
     try {
-      const res = await fetch("/functions/generate", {
+      const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
