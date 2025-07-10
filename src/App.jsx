@@ -8,12 +8,11 @@ function App() {
   const poemRef = useRef();
 
   const handleInputChange = (e) => {
-    setPrompt(e.target.value);
+    setPrompt(prev => e.target.value);
   };
 
   const handleGenerate = () => {
-    const currentPrompt = prompt;
-    setSubmittedPrompt(currentPrompt);
+    setSubmittedPrompt(prev => prompt);
     if (poemRef.current) {
       poemRef.current.generatePoem();
     }
