@@ -1,5 +1,5 @@
 import './App.css'
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import GeneratePoem from './components/GeneratePoem';
 
 function App() {
@@ -8,16 +8,20 @@ function App() {
   const poemRef = useRef();
 
   const handleInputChange = (e) => {
-    setPrompt(prev => e.target.value);
+    setPrompt(e.target.value);
   };
 
   const handleGenerate = () => {
-    setSubmittedPrompt(prev => prompt);
-    if (poemRef.current) {
-      poemRef.current.generatePoem();
-    }
+    setSubmittedPrompt(prompt);
     setPrompt("");
   };
+  
+  useEffect(() => {
+    if (submittedPrompt && poemRef.current) {
+      poemRef.current.generatePoem();
+    }
+  }, [submittedPrompt]);
+  
 
   return (
     <>
