@@ -12,7 +12,8 @@ function App() {
   };
 
   const handleGenerate = () => {
-    setSubmittedPrompt(prompt);
+    const currentPrompt = prompt;
+    setSubmittedPrompt(currentPrompt);
     if (poemRef.current) {
       poemRef.current.generatePoem();
     }
