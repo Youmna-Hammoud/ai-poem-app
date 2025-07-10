@@ -58,8 +58,11 @@ input[type="text"] {
 }
 
 .poem-output {
-  gap: 1.5rem;
+  white-space: pre-line;
+  text-align: left;
+  font-style: italic;
   padding: 0.5rem;
+  padding-left: 1rem;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 8px;
