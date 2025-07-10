@@ -35,11 +35,12 @@ export async function onRequestPost(context) {
         {
           parts: [
             { text: `
-                    "Write a short, creative poem about: ${prompt}"
+                    The Following is a prompt: "${prompt}"
 
                     Use the following guidelines:
+                    - Detect the language of the input.
                     - If the input is in Arabic, respond with an Arabic poem.
-                    - Otherwise, respond in English.
+                    - Otherwise, respond with an English poem.
 
                     - Make sure the poem has clear line breaks and reads like real poetry.
                     `
