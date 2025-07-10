@@ -41,7 +41,8 @@ export async function onRequestPost(context) {
                     - Detect the language of the input.
                     - If the input is in Arabic, respond with an Arabic poem.
                     - Otherwise, respond with an English poem.
-
+                    - The poem should be about the topic provided in the input.
+                    - Only respond in poem format, do not include any additional text or explanations.
                     - Make sure the poem has clear line breaks and reads like real poetry.
                     `
             }
