@@ -3,6 +3,9 @@
 A simple web app that generates poems using AI!
 Built with modern frontend tools and connected to an AI model (Gemini).
 
+**Live App:** [https://ai-poem-app.pages.dev](https://ai-poem-app.pages.dev)
+
+
 ## ✨ Features
 
 * Generate unique poems from prompts
